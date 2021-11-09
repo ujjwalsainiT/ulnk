@@ -9,7 +9,7 @@ function Footer(props) {
     return (
         <>
 
-            <div className="mt-5 footer_color">
+            <div className="footer_color">
 
                 <div className=" p-3 "> <img src={logo} alt="" style={{ height: "55px" }} /></div>
                 <Grid className="Component_main_grid p-3 ">
