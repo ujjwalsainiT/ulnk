@@ -1,5 +1,5 @@
 import React, { Fragment, Component } from "react";
-//import Footer from "./Footer/Footer.jsx";
+import Footer from "./Footer/Footer.jsx";
 import Header from "./Header/Header.jsx";
 const HOC = (Wcomponent) => {
     return class extends Component {
@@ -11,7 +11,7 @@ const HOC = (Wcomponent) => {
                         <div>
                             <Wcomponent {...this.props} />
                         </div>
-                        {/* <Footer {...this.props} /> */}
+                         <Footer {...this.props} /> 
                     </div>
                 </Fragment>
             );
