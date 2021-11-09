@@ -1,0 +1,16 @@
+.data_fomtting_image {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+}
+.image_height {
+  height: 400px;
+}
+.multiple_links_image{
+    width: 70%;
+}
+@media only screen and (min-width:300px) and(max-width:650px){
+    .multiple_links_image{
+        width: 100%;
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import HOC from "../../Common/HOC";
-import { Grid, Card, Button } from '@material-ui/core';
+import { Grid, Card } from '@material-ui/core';
 import "./Home.css";
 
 import cap from "../images/cap.png";
@@ -19,6 +19,10 @@ import s10 from "../images/s10.png";
 import s11 from "../images/s11.png";
 import s12 from "../images/s12.png";
 
+
+import Monitize from "../UsedCompnents/Monitize"
+import Embed from '../UsedCompnents/Embed';
+import MultilpleLinks from '../UsedCompnents/MultilpleLinks';
 
 
 function Home() {
@@ -123,6 +127,18 @@ function Home() {
                         <button className="Home_page_button">Try for Free <i className="fa fa-arrow-right" /></button>
                     </div>
                 </div>
+
+                <div className="mt-5 p-2">
+                    <Monitize />
+                </div>
+
+                <div className="mt-3 p-2">
+                    <Embed />
+                </div>
+
+                 <div className="mt-3 p-2">
+                    <MultilpleLinks />
+                </div> 
             </div>
         </>
     )
