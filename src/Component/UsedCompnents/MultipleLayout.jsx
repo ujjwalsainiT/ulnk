@@ -18,8 +18,9 @@ function MultipleLayout() {
                     </Grid>
                     <Grid item md={6} className="p-3">
                         <div className="page_heading">Multiple links and layouts</div>
-                        <div className="data_fomtting_image mt-5">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
-                            or a typeface without relying on meaningful content.</div>
+                        <div className="data_fomtting_image mt-5">Add multiple link options such as social media accounts, music, video to
+                            your ULNK along with custom layouts to showcase your brand.
+                        </div>
                         <div className="text-right mt-3 mb-3">
                             <button className="Home_page_button">Try for Free <i className="fa fa-arrow-right" /></button>
                         </div>

@@ -18,8 +18,9 @@ function Embed() {
                     </Grid>
                     <Grid item md={6} className="p-3">
                         <div className="page_heading">Embed Everywhere</div>
-                        <div className="data_fomtting_image mt-5">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
-                            or a typeface without relying on meaningful content.</div>
+                        <div className="data_fomtting_image mt-5">ULNK helps creators, influencers, entrepreneurs, and brands drive their trafic to 
+                        the things they're pomoting, and onnect thirr followers.
+                        </div>
                         <div className="text-right mt-3 mb-3">
                             <button className="Home_page_button">Try for Free <i className="fa fa-arrow-right" /></button>
                         </div>

@@ -9,6 +9,15 @@
 .multiple_links_image{
     width: 70%;
 }
+.get_link_back_color{
+  background-image: linear-gradient(
+    to right,
+    #cccccc 0%,
+    #868686 51%,
+    #868686 100%
+  ) !important;
+  
+}
 @media only screen and (min-width:300px) and(max-width:650px){
     .multiple_links_image{
         width: 100%;

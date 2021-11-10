@@ -26,6 +26,7 @@ import MultilpleLinks from '../UsedCompnents/MultilpleLinks';
 import ImageCrasoul from '../ImageCrasoul/ImageCrasoul';
 import MultipleLayout from '../UsedCompnents/MultipleLayout';
 import InDepth from '../UsedCompnents/InDepth';
+import GetYourLink from '../UsedCompnents/GetYourLink';
 
 
 function Home() {
@@ -132,24 +133,30 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="mt-5 p-2">
-                    <Monitize />
+                <div className="cards_data_padding">
+                    <div className="mt-5 p-2">
+                        <Monitize />
+                    </div>
+
+                    <div className="mt-3 p-2">
+                        <Embed />
+                    </div>
+
+                    <div className="mt-3 p-2">
+                        <MultilpleLinks />
+                    </div>
+
+                    <div className="mt-3 p-2">
+                        <MultipleLayout />
+                    </div>
+
+                    <div className="mt-3 p-2">
+                        <InDepth />
+                    </div>
                 </div>
 
-                <div className="mt-3 p-2">
-                    <Embed />
-                </div>
-
-                <div className="mt-3 p-2">
-                    <MultilpleLinks />
-                </div>
-
-                <div className="mt-3 p-2">
-                    <MultipleLayout />
-                </div>
-
-                <div className="mt-3 p-2">
-                    <InDepth />
+                <div className="mt-3">
+                    <GetYourLink />
                 </div>
             </div>
         </>

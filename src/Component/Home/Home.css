@@ -63,8 +63,21 @@
 .desktopSlider {
   display: block !important;
 }
+.cards_data_padding{
+  margin-left: 2%;
+  margin-right: 2%;
+}
 @media only screen and (min-width: 250px) and (max-width: 900px) {
   .desktopSlider {
     display: none !important;
+  }
+  .home_content {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .home_para {
+    font-size: 15px;
+    color: #fff;
   }
 }
