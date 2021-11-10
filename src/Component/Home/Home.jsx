@@ -23,6 +23,9 @@ import s12 from "../images/s12.png";
 import Monitize from "../UsedCompnents/Monitize"
 import Embed from '../UsedCompnents/Embed';
 import MultilpleLinks from '../UsedCompnents/MultilpleLinks';
+import ImageCrasoul from '../ImageCrasoul/ImageCrasoul';
+import MultipleLayout from '../UsedCompnents/MultipleLayout';
+import InDepth from '../UsedCompnents/InDepth';
 
 
 function Home() {
@@ -66,9 +69,10 @@ function Home() {
                 </div>
                 <div className="mt-5 user_color_back p-5">
                     <div className="text-center home_content">Over 1,00,000 users trust <span className="content_color">ULNK HUB</span> to <br />supercharge their bio links </div>
-                    <div className="text-center mt-3">
-                        <img src={a} alt="" className="image_data" />
+                    <div className="text-center desktopSlider mt-3">
+                        <ImageCrasoul />
                     </div>
+
                 </div>
 
 
@@ -136,9 +140,17 @@ function Home() {
                     <Embed />
                 </div>
 
-                 <div className="mt-3 p-2">
+                <div className="mt-3 p-2">
                     <MultilpleLinks />
-                </div> 
+                </div>
+
+                <div className="mt-3 p-2">
+                    <MultipleLayout />
+                </div>
+
+                <div className="mt-3 p-2">
+                    <InDepth />
+                </div>
             </div>
         </>
     )

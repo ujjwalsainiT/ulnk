@@ -52,10 +52,19 @@
     #313131 100%
   ) !important;
 }
-.data_padding_from_both{
-    margin-left: 10%;
-    margin-right: 10%;
+.data_padding_from_both {
+  margin-left: 10%;
+  margin-right: 10%;
 }
-.section_third_back{
-    background-color: #CCCCCC !important;
+.section_third_back {
+  background-color: #cccccc !important;
+}
+
+.desktopSlider {
+  display: block !important;
+}
+@media only screen and (min-width: 250px) and (max-width: 900px) {
+  .desktopSlider {
+    display: none !important;
+  }
 }
