@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import HOC from "../../Common/HOC";
 import { Grid, Card } from '@material-ui/core';
@@ -30,6 +30,11 @@ import GetYourLink from '../UsedCompnents/GetYourLink';
 
 
 function Home() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <>
             <div className="home_background_color">

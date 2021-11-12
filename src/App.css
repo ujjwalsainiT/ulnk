@@ -107,7 +107,7 @@ responsive to mobile view on various screen width as below */
     box-sizing: border-box;
   }
   .content_padding {
-    padding-top: 10%;
+    padding-top: 20%;
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -123,7 +123,7 @@ responsive to mobile view on various screen width as below */
     box-sizing: border-box;
   }
   .content_padding {
-    padding-top: 5%;
+    padding-top: 25%;
     margin-left: 5%;
     margin-right: 5%;
   }

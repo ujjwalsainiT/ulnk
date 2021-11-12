@@ -31,14 +31,14 @@ const Header = (props) => {
             <AppBar position="fixed" className="MainHeader">
                 <Toolbar className="header_padding">
                     <div>
-                        <img src={logo} alt="" style={{ height: "55px" }} />
+                        <img src={logo} alt="" style={{ height: "55px" }} onClick={() => props.history.push("/home")} />
                     </div>
                     <div className="header_grow" />
                     <div className="header_links">
-                        <span className="header_link_color">Features</span>
+                        <span className="header_link_color" onClick={() => props.history.push("/feature")}>Features</span>
                         <span className="header_link_color">Pricing</span>
                         <span className="header_link_color">Blog</span>
-                        <span className="header_link_color">Gallery</span>
+                        <span className="header_link_color" onClick={() => props.history.push("/gallery")}>Gallery</span>
                         <span className="header_link_color">English</span>
                         <span className="header_link_color">
                             <button className="header_button">Login</button>
@@ -66,7 +66,7 @@ const Header = (props) => {
                                     }}
                                 ></i>
                             </div>
-                            <span className="logout_Pointer_cursor">
+                            <span className="logout_Pointer_cursor" onClick={() => props.history.push("/feature")}>
                                 Features
                             </span>
                             <span className="logout_Pointer_cursor">
@@ -75,7 +75,7 @@ const Header = (props) => {
                             <span className="logout_Pointer_cursor">
                                 Blog
                             </span>
-                            <span className="logout_Pointer_cursor">
+                            <span className="logout_Pointer_cursor" onClick={() => props.history.push("/gallery")}>
                                 Gallery
                             </span>
                             <span className="logout_Pointer_cursor">
