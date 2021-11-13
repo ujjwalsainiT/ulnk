@@ -26,18 +26,21 @@ const Header = (props) => {
         document.getElementById("mySidenav").style.width = "0px";
         setSidebar(false)
     }
+    const redirecthome = () => {
+        window.location.href = "/home";
+    }
     return (
         <div className="topheader">
             <AppBar position="fixed" className="MainHeader">
                 <Toolbar className="header_padding">
                     <div>
-                        <img src={logo} alt="" style={{ height: "55px" }} onClick={() => props.history.push("/home")} />
+                        <img src={logo} alt="" style={{ height: "55px" }} onClick={redirecthome} />
                     </div>
                     <div className="header_grow" />
                     <div className="header_links">
                         <span className="header_link_color" onClick={() => props.history.push("/feature")}>Features</span>
                         <span className="header_link_color">Pricing</span>
-                        <span className="header_link_color">Blog</span>
+                        <span className="header_link_color" onClick={() => props.history.push("/blog")}>Blog</span>
                         <span className="header_link_color" onClick={() => props.history.push("/gallery")}>Gallery</span>
                         <span className="header_link_color">English</span>
                         <span className="header_link_color">
@@ -72,7 +75,7 @@ const Header = (props) => {
                             <span className="logout_Pointer_cursor">
                                 Pricing
                             </span>
-                            <span className="logout_Pointer_cursor">
+                            <span className="logout_Pointer_cursor" onClick={() => props.history.push("/blog")}>
                                 Blog
                             </span>
                             <span className="logout_Pointer_cursor" onClick={() => props.history.push("/gallery")}>

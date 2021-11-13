@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./Component/Home/Home";
 import Feature from "./Component/Feature/Feature";
 import Gallery from "./Component/Gallery/Gallery";
+import Blog from "./Component/Blog/Blog";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/home" component={Home} />
         <Route exact path="/feature" component={Feature} />
         <Route exact path="/gallery" component={Gallery} />
+        <Route exact path="/blog" component={Blog} />
       </Switch>
     </>
   );

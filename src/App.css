@@ -84,7 +84,28 @@ responsive to mobile view on various screen width as below */
   overflow: scroll;
 }
 
-.top_heading{
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.top_heading {
   font-size: 35px;
   font-weight: 600;
 }
