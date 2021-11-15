@@ -13,6 +13,10 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Monthly from './Monthly';
 import Links from './Links';
+import Customization from './Customization';
+import Analytics from './Analytics';
+import OtherPricing from './OtherPricing';
+import Integration from './Integration';
 
 function Pricing() {
     const [value, setValue] = React.useState(0);
@@ -64,6 +68,23 @@ function Pricing() {
                         <div className="mt-2 pb-2">
                             <Links />
                         </div>
+
+                        <div className="mt-2 pb-2">
+                            <Customization />
+                        </div>
+
+                        <div className="mt-2 pb-2">
+                            <Analytics />
+                        </div>
+
+                        <div className="mt-2 pb-2">
+                            <Integration />
+                        </div>
+
+                        <div className="mt-2 pb-4">
+                            <OtherPricing />
+                        </div>
+
                     </div>
 
 

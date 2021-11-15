@@ -59,6 +59,18 @@
 .linksborder {
   border-left: 10px solid #50d3cb !important;
 }
+.linksborder2{
+    border-left: 10px solid #F17373 !important;
+}
+.linksborder3{
+    border-left: 10px solid #5BE86D !important;
+}
+.linksborder4{
+    border-left: 10px solid #7395F1 !important;
+}
+.linksborder5{
+    border-left: 10px solid #E8AB5B !important;
+}
 @media only screen and (min-width: 300px) and (max-width: 650px) {
   .tab_pannel_data .MuiBox-root {
     padding: 0px !important;

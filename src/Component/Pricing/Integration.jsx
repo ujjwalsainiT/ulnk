@@ -1,6 +1,6 @@
 import React from 'react'
 import { Grid, Card } from '@material-ui/core';
-function Links() {
+function Integration() {
     const linkArr = [
         { data: "Unlimited Links" },
         { data: "Unlimited Links" },
@@ -14,14 +14,10 @@ function Links() {
     ]
     return (
         <>
-            <div className="d-flex">
-                <div className="home_content" style={{ width: "60%" }}>LINKS</div>
-                <div className="Links_content text-center" style={{ width: "20%" }}>Free <br />Sign Up for Free</div>
-                <div className="Links_content text-center" style={{ width: "20%" }}>Pro <br /> Join the pro's</div>
-            </div>
 
+            <div className="home_content">Integrations</div>
 
-            <Card className="Card_shadow linksborder">
+            <Card className="Card_shadow linksborder4">
                 <table className="table">
                     <tbody>
                         {linkArr.map((item, index) => (
@@ -40,4 +36,4 @@ function Links() {
     )
 }
 
-export default Links
+export default Integration
