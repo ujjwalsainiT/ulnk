@@ -80,4 +80,8 @@
     font-size: 15px;
     color: #fff;
   }
+  .data_padding_from_both {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
