@@ -9,6 +9,8 @@ import Pricing from "./Component/Pricing/Pricing";
 import Login from "./Component/Login/Login";
 import AddLinks from "./Component/AfterLoginPage/AddLinks/AddLinks";
 import MyAccount from "./Component/AfterLoginPage/MyAccount/MyAccount";
+import EmailVerify from "./Component/AfterLoginPage/MyAccount/EmailVerify";
+import ResetPassword from "./Component/AfterLoginPage/MyAccount/ResetPassword";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         {/*After login Page*/}
         <Route exact path="/add-links" component={AddLinks} />
         <Route exact path="/my-account" component={MyAccount} />
+        <Route exact path="/email-verify" component={EmailVerify} />
+        <Route exact path="/reset-password" component={ResetPassword} />
       </Switch>
     </>
   );

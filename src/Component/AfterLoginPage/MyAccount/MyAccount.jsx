@@ -5,7 +5,7 @@ import { Card, Grid, Button } from '@material-ui/core';
 import HOC1 from "../../../Common/HOC1";
 import "./MyAccount.css"
 
-function MyAccount() {
+function MyAccount(props) {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
@@ -31,7 +31,7 @@ function MyAccount() {
                                 <div className="EditProfile_heading">Change Password</div>
                             </Grid>
                             <Grid item md={1} className="p-1">
-                                <Button className="EditPrfileBtn">Edit</Button>
+                                <Button className="EditPrfileBtn" onClick={() => props.history.push("/email-verify")}>Edit</Button>
                             </Grid>
                         </Grid>
                         <hr />

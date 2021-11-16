@@ -37,13 +37,11 @@
 }
 
 .Login_in {
-  color: #fd7114;
+  color: #50d3cb;
   cursor: pointer;
   font-weight: 500;
 }
-.Login_in:hover {
-  color: #ff5c00;
-}
+
 
 .MuiCard-root {
   overflow: visible !important;
