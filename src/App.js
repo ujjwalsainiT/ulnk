@@ -7,6 +7,7 @@ import Gallery from "./Component/Gallery/Gallery";
 import Blog from "./Component/Blog/Blog";
 import Pricing from "./Component/Pricing/Pricing";
 import Login from "./Component/Login/Login";
+import AddLinks from "./Component/AfterLoginPage/AddLinks/AddLinks";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/pricing" component={Pricing} />
         <Route exact path="/login" component={Login} />
+
+        {/*After login Page*/}
+        <Route exact path="/add-links" component={AddLinks} />
       </Switch>
     </>
   );

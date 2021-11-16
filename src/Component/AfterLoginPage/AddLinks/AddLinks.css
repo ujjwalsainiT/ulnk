@@ -1,0 +1,22 @@
+.padding_from_top {
+  padding-top: 5%;
+}
+
+.phoneborder_afterlogin {
+  border: 5px solid black;
+  border-radius: 25px;
+  width: 250px;
+  height: 525px;
+  background-color: #fff;
+}
+
+.user_Image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.border_right_links {
+  border-right: 2px solid white;
+  height: 525px;
+}
