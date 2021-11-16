@@ -1,0 +1,14 @@
+.EditProfile_heading{
+    font-size: 16px;
+    font-weight: 600;
+    color: gray;
+}
+
+.EditPrfileBtn{
+    background-color: gray !important;
+    width: 100% !important;
+    color: #fff !important;
+    outline: none !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    font-weight: 600 !important;
+}

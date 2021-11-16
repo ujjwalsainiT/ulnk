@@ -96,16 +96,8 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: black;
+  background-color: gray;
   color: #fff;
-}
-
-.dropdown_user_profile {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: lightgray;
-  color: #000;
 }
 
 .dropdown {
@@ -141,13 +133,6 @@
   background-color: #1F9B92 !important;
 }
 
-.dropdown_user_profile {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background-color: lightgray;
-  color: #000;
-}
 @media only screen and (min-width: 300px) and (max-width: 800px) {
   .header_links {
     display: none;

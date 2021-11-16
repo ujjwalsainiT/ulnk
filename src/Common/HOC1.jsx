@@ -1,5 +1,7 @@
 import React, { Fragment, Component } from "react";
+import Footer from "./Footer/Footer.jsx";
 import HeaderAfterLogin from "./Header/HeaderAfterLogin.jsx";
+
 
 const HOC1 = (Wcomponent) => {
     return class extends Component {
@@ -11,7 +13,7 @@ const HOC1 = (Wcomponent) => {
                         <div>
                             <Wcomponent {...this.props} />
                         </div>
-                       
+                        <Footer />
                     </div>
                 </Fragment>
             );

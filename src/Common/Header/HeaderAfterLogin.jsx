@@ -42,13 +42,22 @@ const HeaderAfterLogin = (props) => {
                         <span className="header_link_color">Setting</span>
                         <span className="header_link_color">Free Trail</span>
                         <span className="header_link_color">
-                            <div className="d-flex">
-                                <span className="dropdown_user_profile p-1">PR</span>
-                                <span className="pl-2 pr-2 mt-1">
-                                    <div><strong>user profile</strong></div>
+                            <div className="dropdown">
+                                <span><span className="user_image p-2 mr-2">PR</span>Profile Name</span>
+                                <div className="dropdown-content">
 
-                                </span>
+                                    <div className="mt-3" >Profile Title</div>
+                                    <hr />
+                                    <div className="mt-1" onClick={() => props.history.push("/my-account")}>Account</div>
+                                    <div className="mt-1" >Billing</div>
+                                    <div className="mt-1" onClick={() => {
+                                        localStorage.clear();
+                                        window.location.href = "/home"
+                                    }}>Logout</div>
+                                </div>
                             </div>
+
+
                         </span>
                     </div>
                     <div className="mobile_Burger_Menu">
