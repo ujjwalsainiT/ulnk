@@ -15,7 +15,7 @@ function MyAccount() {
                 <div className="content_padding pb-5">
                     <div className="home_content text-center">MY ACCOUNT</div>
                     <Card className="Card_shadow mt-2">
-                        <Grid className="Component_main_grid p-2 ">
+                        <Grid className="Component_main_grid p-1 ">
                             <Grid item md={11} className="p-1">
                                 <div className="EditProfile_heading">Email Address</div>
                                 <div className="EditProfile_heading">abcdd@gmail.com</div>
@@ -25,7 +25,7 @@ function MyAccount() {
                             </Grid>
                         </Grid>
                         <hr />
-                        <Grid className="Component_main_grid p-2 ">
+                        <Grid className="Component_main_grid p-1 ">
                             <Grid item md={11} className="p-1">
                                 <div className="EditProfile_heading">Password</div>
                                 <div className="EditProfile_heading">Change Password</div>
@@ -35,7 +35,7 @@ function MyAccount() {
                             </Grid>
                         </Grid>
                         <hr />
-                        <Grid className="Component_main_grid p-2 ">
+                        <Grid className="Component_main_grid p-1 ">
                             <Grid item md={11} className="p-1">
                                 <div className="EditProfile_heading">Language</div>
                                 <div className="EditProfile_heading">English</div>
@@ -45,7 +45,7 @@ function MyAccount() {
                             </Grid>
                         </Grid>
                         <hr />
-                        <Grid className="Component_main_grid p-2 ">
+                        <Grid className="Component_main_grid p-1 ">
                             <Grid item md={11} className="p-1">
                                 <div className="EditProfile_heading">Timezone</div>
                                 <div className="EditProfile_heading">Asia/calcutta</div>
@@ -55,7 +55,7 @@ function MyAccount() {
                             </Grid>
                         </Grid>
                         <hr />
-                        <Grid className="Component_main_grid p-2 ">
+                        <Grid className="Component_main_grid p-1 ">
                             <Grid item md={11} className="p-1">
                                 <div className="EditProfile_heading">More Information</div>
                             </Grid>
