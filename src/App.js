@@ -11,6 +11,7 @@ import AddLinks from "./Component/AfterLoginPage/AddLinks/AddLinks";
 import MyAccount from "./Component/AfterLoginPage/MyAccount/MyAccount";
 import EmailVerify from "./Component/AfterLoginPage/MyAccount/EmailVerify";
 import ResetPassword from "./Component/AfterLoginPage/MyAccount/ResetPassword";
+import FreeTrail from "./Component/AfterLoginPage/FreeTrail/FreeTrail";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/my-account" component={MyAccount} />
         <Route exact path="/email-verify" component={EmailVerify} />
         <Route exact path="/reset-password" component={ResetPassword} />
+        <Route exact path="/free-trail" component={FreeTrail} />
       </Switch>
     </>
   );
