@@ -44,10 +44,10 @@ const Header = (props) => {
                         <span className="header_link_color" onClick={() => props.history.push("/gallery")}>Gallery</span>
                         <span className="header_link_color">English</span>
                         <span className="header_link_color">
-                            <button className="header_button">Login</button>
+                            <button className="header_button" onClick={() => props.history.push("/login")}>Login</button>
                         </span>
                         <span className="header_link_color">
-                            <button className="header_button">Sign Up</button>
+                            <button className="header_button" onClick={() => props.history.push("/login")}>Sign Up</button>
                         </span>
                     </div>
                     <div className="mobile_Burger_Menu">
@@ -84,10 +84,10 @@ const Header = (props) => {
                             <span className="logout_Pointer_cursor">
                                 English
                             </span>
-                            <span className="logout_Pointer_cursor">
+                            <span className="logout_Pointer_cursor" onClick={() => props.history.push("/login")}>
                                 Login
                             </span>
-                            <span className="logout_Pointer_cursor">
+                            <span className="logout_Pointer_cursor" onClick={() => props.history.push("/login")}>
                                 SignUp
                             </span>
                         </div>

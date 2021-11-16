@@ -6,6 +6,7 @@ import Feature from "./Component/Feature/Feature";
 import Gallery from "./Component/Gallery/Gallery";
 import Blog from "./Component/Blog/Blog";
 import Pricing from "./Component/Pricing/Pricing";
+import Login from "./Component/Login/Login";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/gallery" component={Gallery} />
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/pricing" component={Pricing} />
+        <Route exact path="/login" component={Login} />
       </Switch>
     </>
   );
