@@ -81,7 +81,7 @@ const Login = (props) => {
                                 <Button
                                     variant="contained"
                                     className="Login_page_button"
-                                    onClick={() => props.history.push("/add-links")}
+                                    onClick={() => props.history.push("/edit-profile")}
                                 >
                                     Log in / Sign up
                                 </Button>
