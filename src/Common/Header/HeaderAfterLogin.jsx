@@ -36,7 +36,7 @@ const HeaderAfterLogin = (props) => {
                     </div>
                     <div className="header_grow" />
                     <div className="header_links">
-                        <span className="header_link_color">Links</span>
+                        <span className="header_link_color" onClick={() => props.history.push("/add-links")}>Links</span>
                         <span className="header_link_color">Styles</span>
                         <span className="header_link_color">Statistics</span>
                         <span className="header_link_color" onClick={() => props.history.push("/setting")}>Setting</span>
@@ -104,7 +104,7 @@ const HeaderAfterLogin = (props) => {
                                     }}
                                 ></i>
                             </div>
-                            <span className="logout_Pointer_cursor">
+                            <span className="logout_Pointer_cursor" onClick={() => props.history.push("/add-links")}>
                                 Links
                             </span>
                             <span className="logout_Pointer_cursor">

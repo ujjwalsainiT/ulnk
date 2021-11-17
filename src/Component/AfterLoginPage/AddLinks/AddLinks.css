@@ -23,3 +23,11 @@
 .userdaboard_color{
   background-color: #090909;
 }
+.add_link_heading{
+  color:white !important;
+  font-size: 13px;
+}
+.link_color{
+  color: #1f9b92;
+  font-size: 15px;
+}
