@@ -14,6 +14,7 @@ import ResetPassword from "./Component/AfterLoginPage/MyAccount/ResetPassword";
 import FreeTrail from "./Component/AfterLoginPage/FreeTrail/FreeTrail";
 import Setting from "./Component/AfterLoginPage/Setting/Setting";
 import EditProfile from "./Component/EditProfile/EditProfile";
+import Statistics from "./Component/AfterLoginPage/Statistics/Statistics";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route exact path="/reset-password" component={ResetPassword} />
         <Route exact path="/free-trail" component={FreeTrail} />
         <Route exact path="/setting" component={Setting} />
+        <Route exact path="/statistics" component={Statistics} />
       </Switch>
     </>
   );

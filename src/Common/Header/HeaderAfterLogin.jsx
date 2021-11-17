@@ -38,7 +38,7 @@ const HeaderAfterLogin = (props) => {
                     <div className="header_links">
                         <span className="header_link_color" onClick={() => props.history.push("/add-links")}>Links</span>
                         <span className="header_link_color">Styles</span>
-                        <span className="header_link_color">Statistics</span>
+                        <span className="header_link_color" onClick={() => props.history.push("/statistics")}>Statistics</span>
                         <span className="header_link_color" onClick={() => props.history.push("/setting")}>Setting</span>
                         <span className="header_link_color" onClick={() => props.history.push("/free-trail")}>Free Trail</span>
                         <span className="header_link_color">
@@ -110,7 +110,7 @@ const HeaderAfterLogin = (props) => {
                             <span className="logout_Pointer_cursor">
                                 Styles
                             </span>
-                            <span className="logout_Pointer_cursor">
+                            <span className="logout_Pointer_cursor" onClick={() => props.history.push("/statistics")} >
                                 Statistics
                             </span>
                             <span className="logout_Pointer_cursor" onClick={() => props.history.push("/setting")}>
