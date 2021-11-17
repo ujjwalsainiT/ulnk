@@ -39,10 +39,35 @@ const HeaderAfterLogin = (props) => {
                         <span className="header_link_color">Links</span>
                         <span className="header_link_color">Styles</span>
                         <span className="header_link_color">Statistics</span>
-                        <span className="header_link_color">Setting</span>
+                        <span className="header_link_color" onClick={() => props.history.push("/setting")}>Setting</span>
                         <span className="header_link_color" onClick={() => props.history.push("/free-trail")}>Free Trail</span>
                         <span className="header_link_color">
-                            <div className="dropdown">
+                            <div class="dropdown show">
+                                <span className="user_image p-2 mr-2" id="dropdownMenuLink" data-toggle="dropdown" ><i className="fa fa-bell" /></span>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <span className="mt-3 ml-3" >Last changes</span>
+                                    <hr />
+                                    <span class="dropdown-item">Action</span>
+                                    <span class="dropdown-item">Another action</span>
+                                    <span class="dropdown-item">Something else here</span>
+                                </div>
+                            </div>
+                        </span>
+                        <span className="header_link_color">
+                            <div class="dropdown show">
+                                <span className="user_image p-2 mr-2" id="dropdownMenuLink" data-toggle="dropdown" >PR</span>Profile Name
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <span className="mt-3 ml-3" >Profile Title</span>
+                                    <hr />
+                                    <span class="dropdown-item" onClick={() => props.history.push("/my-account")}>Account</span>
+                                    <span class="dropdown-item">Billing</span>
+                                    <span class="dropdown-item" onClick={() => {
+                                        localStorage.clear();
+                                        window.location.href = "/home"
+                                    }}>Logout</span>
+                                </div>
+                            </div>
+                            {/* <div className="dropdown">
                                 <span><span className="user_image p-2 mr-2">PR</span>Profile Name</span>
                                 <div className="dropdown-content">
 
@@ -55,7 +80,7 @@ const HeaderAfterLogin = (props) => {
                                         window.location.href = "/home"
                                     }}>Logout</div>
                                 </div>
-                            </div>
+                            </div> */}
 
 
                         </span>
@@ -88,7 +113,7 @@ const HeaderAfterLogin = (props) => {
                             <span className="logout_Pointer_cursor">
                                 Statistics
                             </span>
-                            <span className="logout_Pointer_cursor">
+                            <span className="logout_Pointer_cursor" onClick={() => props.history.push("/setting")}>
                                 Setting
                             </span>
                             <span className="logout_Pointer_cursor" onClick={() => props.history.push("/free-trail")}>

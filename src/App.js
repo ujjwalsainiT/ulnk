@@ -12,6 +12,8 @@ import MyAccount from "./Component/AfterLoginPage/MyAccount/MyAccount";
 import EmailVerify from "./Component/AfterLoginPage/MyAccount/EmailVerify";
 import ResetPassword from "./Component/AfterLoginPage/MyAccount/ResetPassword";
 import FreeTrail from "./Component/AfterLoginPage/FreeTrail/FreeTrail";
+import Setting from "./Component/AfterLoginPage/Setting/Setting";
+import EditProfile from "./Component/EditProfile/EditProfile";
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/pricing" component={Pricing} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/edit-profile" component={EditProfile} />
 
         {/*After login Page*/}
         <Route exact path="/add-links" component={AddLinks} />
@@ -31,6 +34,7 @@ function App() {
         <Route exact path="/email-verify" component={EmailVerify} />
         <Route exact path="/reset-password" component={ResetPassword} />
         <Route exact path="/free-trail" component={FreeTrail} />
+        <Route exact path="/setting" component={Setting} />
       </Switch>
     </>
   );

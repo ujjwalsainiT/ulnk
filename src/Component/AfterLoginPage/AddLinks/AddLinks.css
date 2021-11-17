@@ -18,5 +18,8 @@
 
 .border_right_links {
   border-right: 2px solid white;
-  height: 525px;
+  height: auto;
+}
+.userdaboard_color{
+  background-color: #090909;
 }
