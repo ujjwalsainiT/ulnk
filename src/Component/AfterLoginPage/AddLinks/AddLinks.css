@@ -20,14 +20,19 @@
   border-right: 2px solid white;
   height: auto;
 }
-.userdaboard_color{
+.userdaboard_color {
   background-color: #090909;
 }
-.add_link_heading{
-  color:white !important;
+.add_link_heading {
+  color: white !important;
   font-size: 13px;
 }
-.link_color{
+.link_color {
   color: #1f9b92;
   font-size: 15px;
+}
+.Linker_pages_heading {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
 }

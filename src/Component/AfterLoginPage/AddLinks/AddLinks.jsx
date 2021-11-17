@@ -10,6 +10,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import AddlinkExamples from './AddlinkExamples.jsx';
 
 function AddLinks() {
     const [value, setValue] = React.useState(0);
@@ -36,7 +37,7 @@ function AddLinks() {
                                     {/* first tab data*/}
                                     <div className="tab_pannel_data">
                                         <TabPanel value={value} index={0}>
-                                            dsjh
+                                            <AddlinkExamples />
                                         </TabPanel>
                                     </div>
 
