@@ -16,6 +16,7 @@ import Setting from "./Component/AfterLoginPage/Setting/Setting";
 import EditProfile from "./Component/EditProfile/EditProfile";
 import Statistics from "./Component/AfterLoginPage/Statistics/Statistics";
 import AddIcons from "./Component/EditProfile/AddIcons";
+import LinkStyles from "./Component/AfterLoginPage/LinkStyles/LinkStyles";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route exact path="/free-trail" component={FreeTrail} />
         <Route exact path="/setting" component={Setting} />
         <Route exact path="/statistics" component={Statistics} />
+        <Route exact path="/styles" component={LinkStyles} />
       </Switch>
     </>
   );

@@ -88,7 +88,7 @@ function AddLinks() {
                                                             <input
                                                                 type="text"
                                                                 className="form-control"
-                                                                placeholder="https://exampple.com"
+                                                                placeholder="www.exampple.com"
                                                                 value={link}
                                                                 onChange={(e) => {
                                                                     setlink(e.target.value)
@@ -126,7 +126,7 @@ function AddLinks() {
                                                     </span>
                                                     <span>
                                                         <div className="mt-2">
-                                                        <i class="fa fa-chevron-right"></i>
+                                                            <i class="fa fa-chevron-right"></i>
                                                         </div>
                                                     </span>
                                                 </div>
