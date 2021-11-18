@@ -15,6 +15,7 @@ import FreeTrail from "./Component/AfterLoginPage/FreeTrail/FreeTrail";
 import Setting from "./Component/AfterLoginPage/Setting/Setting";
 import EditProfile from "./Component/EditProfile/EditProfile";
 import Statistics from "./Component/AfterLoginPage/Statistics/Statistics";
+import AddIcons from "./Component/EditProfile/AddIcons";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/pricing" component={Pricing} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/edit-profile" component={EditProfile} />
+        <Route exact path="/add-icons" component={AddIcons} />
 
         {/*After login Page*/}
         <Route exact path="/add-links" component={AddLinks} />

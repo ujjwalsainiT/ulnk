@@ -45,7 +45,7 @@ function AddlinkExamples() {
                             <img src={c2} alt="" className="crasoul_image" />
                         </Grid>
                         <Grid item md={4} className="p-3">
-                            <img src={c2} alt="" className="crasoul_image" />
+                            <img src={c4} alt="" className="crasoul_image" />
                         </Grid>
 
                     </Grid>

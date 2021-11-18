@@ -49,7 +49,7 @@ function EditProfile(props) {
                                 <Button
                                     variant="contained"
                                     className="button_formatting"
-                                    onClick={() => props.history.push("/add-links")}
+                                    onClick={() => props.history.push("/add-icons")}
                                 >
                                     Next
                                 </Button>

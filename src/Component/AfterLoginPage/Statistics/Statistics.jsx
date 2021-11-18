@@ -5,7 +5,7 @@ import "./Statistics.css"
 
 //common component
 import HOC1 from "../../../Common/HOC1.jsx"
-import { Grid, Card } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 
 
 //used compnent
