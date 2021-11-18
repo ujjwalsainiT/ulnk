@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HOC1 from "../../../Common/HOC1.jsx"
-import { Grid, Button } from '@material-ui/core';
+import { Grid, Button, Card } from '@material-ui/core';
 import "./AddLinks.css"
-
+import Expand from "react-expand-animated"
 import user from "../../images/user.jpg"
 
 //tab pannel
@@ -12,8 +12,15 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import AddlinkExamples from './AddlinkExamples.jsx';
 
+
+
 function AddLinks() {
     const [value, setValue] = React.useState(0);
+    //local state
+    const [addMangeopen, setaddMangeopen] = useState(false);
+    const [NewLinksArr, setNewLinksArr] = useState([])
+    const [title, settitle] = useState("")
+    const [link, setlink] = useState("")
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -43,7 +50,89 @@ function AddLinks() {
 
                                     {/* second tab data*/}
                                     <TabPanel value={value} index={1}>
-                                        aNNUALLY
+                                        <div className="mt-2">
+                                            <Button
+                                                variant="contained"
+                                                className="add_new_link_btn"
+                                                onClick={() => setaddMangeopen(!addMangeopen)}
+
+                                            >
+                                                <i className="fa fa-plus mr-2" /> Add New Link
+                                            </Button>
+                                        </div>
+
+                                        <div className="mt-3 ">
+                                            <Expand open={addMangeopen}>
+                                                <Card className=" mb-2 Card_shadow p-2">
+                                                    <div className="mt-2">
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text" id="basic-addon1"> <i class="fa fa-file"></i></span>
+                                                            </div>
+                                                            <input
+                                                                type="text"
+                                                                className="form-control"
+                                                                placeholder="Title Example"
+                                                                value={title}
+                                                                onChange={(e) => {
+                                                                    settitle(e.target.value)
+                                                                }}
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div className="mt-2">
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text" id="basic-addon1"> <i class="fa fa-globe"></i></span>
+                                                            </div>
+                                                            <input
+                                                                type="text"
+                                                                className="form-control"
+                                                                placeholder="https://exampple.com"
+                                                                value={link}
+                                                                onChange={(e) => {
+                                                                    setlink(e.target.value)
+                                                                }}
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                    <div className="mt-2 mb-2 text-right">
+                                                        <Button
+                                                            variant="contained"
+                                                            className="button_formatting"
+                                                            onClick={() => {
+                                                                NewLinksArr.push({
+                                                                    title: title,
+                                                                    link: link
+                                                                })
+                                                                setNewLinksArr([...NewLinksArr])
+                                                            }}
+                                                        >
+                                                            Add Link
+                                                        </Button>
+                                                    </div>
+                                                </Card>
+                                            </Expand>
+                                        </div>
+
+                                        <div className="text-center home_para mt-3">You have'nt added any links yet - <br /> complete the inputbox above to add one</div>
+
+                                        <div className="mt-3">
+                                            <Card className="Card_shadow documentation_back_color p-3">
+                                                <div className="d-flex justify-content-between">
+                                                    <span>
+                                                        <div className="mt-2">DOCUMENTATION</div>
+                                                        <div className="mt-2">Get started with unlnk.co.uk</div>
+                                                    </span>
+                                                    <span>
+                                                        <div className="mt-2">
+                                                        <i class="fa fa-chevron-right"></i>
+                                                        </div>
+                                                    </span>
+                                                </div>
+                                            </Card>
+                                        </div>
+
                                     </TabPanel>
 
                                     {/* third tab data*/}
@@ -84,13 +173,19 @@ function AddLinks() {
                                         <img src={user} alt="" className="user_Image" />
                                     </div>
                                     <div>User Name</div>
-                                </div>
 
+
+                                </div>
+                                <div className="mt-2 p-2 linkoverflow_scroll">
+                                    {NewLinksArr.map((item, index) => (
+                                        <a href={`//${item.link}`} target="_blank" rel="noreferrer" className="ancor_formatting"><div className="link_back_color mt-2 p-2">{item.title}</div></a>
+                                    ))}
+                                </div>
                             </div>
                         </Grid>
                     </Grid>
-                </div>
-            </div>
+                </div >
+            </div >
         </>
     )
 }

@@ -16,10 +16,10 @@
   border-radius: 50%;
 }
 
-.border_right_links {
+/* .border_right_links {
   border-right: 2px solid white;
   height: auto;
-}
+} */
 .userdaboard_color {
   background-color: #090909;
 }
@@ -35,4 +35,39 @@
   color: black;
   font-size: 16px;
   font-weight: 600;
+}
+
+.add_new_link_btn {
+  background-color: #50d3cb !important;
+  color: #fff !important;
+  display: inline-block !important;
+  font-size: 16px !important;
+  padding: 8px 25px !important;
+  width: 100% !important;
+  text-align: center;
+  text-transform: capitalize !important;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: none !important;
+  text-decoration: none !important;
+}
+
+.link_back_color {
+  background-color: #50d3cb;
+  border-radius: 4px;
+}
+.linkoverflow_scroll {
+  overflow-y: scroll;
+  height: 350px;
+}
+.ancor_formatting {
+  text-decoration: none !important;
+  color: white;
+}
+.ancor_formatting:hover {
+  text-decoration: none !important;
+  color: whitesmoke;
+}
+.documentation_back_color{
+  background-color: #C5C5C5 !important;
 }
