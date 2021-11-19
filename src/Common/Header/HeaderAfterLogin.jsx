@@ -37,7 +37,7 @@ const HeaderAfterLogin = (props) => {
                     <div className="header_grow" />
                     <div className="header_links">
                         <span className="header_link_color" onClick={() => props.history.push("/add-links")}>Links</span>
-                        <span className="header_link_color" onClick={() => props.history.push("/styles")}>Styles</span>
+                        <span className="header_link_color" onClick={() => props.history.push("/styles")}>Style</span>
                         <span className="header_link_color" onClick={() => props.history.push("/statistics")}>Statistics</span>
                         <span className="header_link_color" onClick={() => props.history.push("/setting")}>Setting</span>
                         <span className="header_link_color" onClick={() => props.history.push("/free-trail")}>Free Trail</span>
@@ -47,9 +47,9 @@ const HeaderAfterLogin = (props) => {
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <span className="mt-3 ml-3" >Last changes</span>
                                     <hr />
-                                    <span class="dropdown-item">Action</span>
-                                    <span class="dropdown-item">Another action</span>
-                                    <span class="dropdown-item">Something else here</span>
+                                    <span class="dropdown-item">Notification 1</span>
+                                    <span class="dropdown-item">Notification 2</span>
+                                    <span class="dropdown-item">Notification 3</span>
                                 </div>
                             </div>
                         </span>
@@ -107,7 +107,7 @@ const HeaderAfterLogin = (props) => {
                             <span className="logout_Pointer_cursor" onClick={() => props.history.push("/add-links")}>
                                 Links
                             </span>
-                            <span className="logout_Pointer_cursor">
+                            <span className="logout_Pointer_cursor" onClick={() => props.history.push("/styles")}>
                                 Styles
                             </span>
                             <span className="logout_Pointer_cursor" onClick={() => props.history.push("/statistics")} >

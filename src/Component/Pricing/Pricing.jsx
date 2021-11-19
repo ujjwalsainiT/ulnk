@@ -17,6 +17,7 @@ import Customization from './Customization';
 import Analytics from './Analytics';
 import OtherPricing from './OtherPricing';
 import Integration from './Integration';
+import Annually from './Annually';
 
 function Pricing() {
     const [value, setValue] = React.useState(0);
@@ -61,7 +62,7 @@ function Pricing() {
 
                             {/* second tab data*/}
                             <TabPanel value={value} index={1}>
-                                aNNUALLY
+                                <Annually />
                             </TabPanel>
                         </div>
 

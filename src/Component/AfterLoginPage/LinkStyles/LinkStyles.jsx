@@ -9,6 +9,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import SiteDetails from './SiteDetails.jsx';
 
 
 
@@ -27,7 +28,7 @@ function AddLinks() {
     const CarddataArr = [
         { data: "Backgroun Image" },
         { data: "Page Color" },
-        { data: "Maion font" },
+        { data: "Main font" },
         { data: "Font for title" },
         { data: "Font Case" }
     ]
@@ -53,7 +54,7 @@ function AddLinks() {
                                     {/* first tab data*/}
                                     <div className="tab_pannel_data">
                                         <TabPanel value={value} index={0}>
-                                            site detail
+                                            <SiteDetails />
                                         </TabPanel>
                                     </div>
 
@@ -119,7 +120,6 @@ function AddLinks() {
                             <div className="p-2 userdaboard_color d-flex justify-content-between">
                                 <div className="add_link_heading">MY ULNK HUB LINK: <span className="link_color">abcd.bio/userprofile</span></div>
                                 <div className="add_link_heading">
-
                                     <span>
                                         <Button
                                             variant="contained"

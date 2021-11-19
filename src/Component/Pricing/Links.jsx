@@ -27,8 +27,8 @@ function Links() {
                         {linkArr.map((item, index) => (
                             <tr>
                                 <td><strong>{item.data}</strong></td>
-                                <td><div className="text-center"><i className="fa fa-check" /></div></td>
-                                <td><div className="text-center"><i className="fa fa-check" /></div></td>
+                                <td><div className="text-center"><i class="fa fa-check-circle"></i></div></td>
+                                <td><div className="text-center"><i class="fa fa-check-circle"></i></div></td>
                             </tr>
                         ))}
                     </tbody>
