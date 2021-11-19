@@ -12,7 +12,32 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import AddlinkExamples from './AddlinkExamples.jsx';
 
-
+import facebook from "../../images/icons/facebook.png";
+import twitter from "../../images/icons/twitter.png"
+import whatsapp from "../../images/icons/whatsapp.png"
+import youtube from "../../images/icons/youtube.png"
+import telegram from "../../images/icons/telegram.png"
+import instagram from "../../images/icons/instagram.png"
+import pintrest from "../../images/icons/pintrest.png"
+import shopping from "../../images/icons/shopping.png"
+import linkedin from "../../images/icons/linkedin.png"
+import etsy from "../../images/icons/etsy.png"
+import tiktok from "../../images/icons/tiktok.png"
+import amazon from "../../images/icons/amazon.png"
+import paypal from "../../images/icons/paypal.png"
+import ebay from "../../images/icons/ebay.png"
+import google from "../../images/icons/google.png"
+import digg from "../../images/icons/digg.png"
+import m from "../../images/icons/m.png"
+import spotify from "../../images/icons/spotify.png"
+import twitch from "../../images/icons/twitch.png"
+import discord from "../../images/icons/discord.png"
+import website from "../../images/icons/website.png"
+import snapchat from "../../images/icons/snapchat.png"
+import shopify from "../../images/icons/shopify.png"
+import soundcloud from "../../images/icons/soundcloud.png"
+import messanger from "../../images/icons/messanger.png"
+import line from "../../images/icons/line.png"
 
 function AddLinks() {
     const [value, setValue] = React.useState(0);
@@ -25,6 +50,89 @@ function AddLinks() {
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
+
+    const SocailIcons = [
+        {
+            path: facebook
+        },
+        {
+            path: twitter
+        },
+        {
+            path: whatsapp
+        },
+        {
+            path: youtube
+        },
+        {
+            path: telegram
+        },
+        {
+            path: instagram
+        },
+        {
+            path: pintrest
+        },
+        {
+            path: shopping
+        },
+        {
+            path: linkedin
+        },
+        {
+            path: etsy
+        },
+        {
+            path: tiktok
+        },
+        {
+            path: amazon
+        },
+        {
+            path: paypal
+        },
+        {
+            path: ebay
+        },
+        {
+            path: google
+        },
+        {
+            path: digg
+        },
+        {
+            path: m
+        },
+        {
+            path: spotify
+        },
+        {
+            path: twitch
+        },
+        {
+            path: discord
+        },
+        {
+            path: website
+        },
+        {
+            path: snapchat
+        },
+        {
+            path: shopify
+        },
+        {
+            path: soundcloud
+        },
+        {
+            path: messanger
+        },
+        {
+            path: line
+        }
+
+    ]
+
     return (
         <>
             <div className="home_background_color">
@@ -136,8 +244,54 @@ function AddLinks() {
                                     </TabPanel>
 
                                     {/* third tab data*/}
-                                    <TabPanel value={value} index={3}>
-                                        aNNUALLY
+                                    <TabPanel value={value} index={2}>
+                                        <div className="mt-3">
+                                            <Card className=" mb-2 Card_shadow p-2">
+                                                <div className="text-center Style_heading">Position</div>
+                                                <div className="text-center Style_para mt-2">Set the icon block above links and below links.</div>
+                                                <div className="data_padding_from_both mt-2">
+                                                    <div className="d-flex justify-content-between">
+                                                        <span>
+                                                            <div className="text-center"><i className="fa fa-arrow-up" /></div>
+                                                            <div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                                                                    <label class="form-check-label" for="exampleRadios2">
+                                                                        Below Links
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                        <span>
+                                                            <div className="text-center"><i className="fa fa-arrow-down" /></div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
+                                                                <label class="form-check-label" for="exampleRadios1">
+                                                                    Above Links
+                                                                </label>
+                                                            </div>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </Card>
+                                        </div>
+
+                                        <div class="alert alert-warning text-center" role="alert">
+                                            Missing a Serive/icons?<span className="suggest_Font"> Suggest it!</span>
+                                        </div>
+
+                                        <div className="mt-3">
+                                            <Card className=" mb-2 Card_shadow p-2">
+                                                <Grid className="d-flex flex-wrap">
+                                                    {SocailIcons.map((item, index) => (
+                                                        <Grid item md={2} className="p-3 text-center">
+                                                            <img src={item.path} alt="" style={{ width: "30px" }} />
+                                                        </Grid>
+                                                    ))}
+                                                </Grid>
+                                            </Card>
+                                        </div>
+
                                     </TabPanel>
                                 </div>
                             </div>
