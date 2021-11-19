@@ -4,7 +4,7 @@ import { Card, Button } from "@material-ui/core";
 import "./EditProfile.css";
 
 function EditProfile(props) {
-    const [showimage, setshowimage] = useState("https://www.seekpng.com/png/detail/202-2024994_profile-icon-profile-logo-no-background.png")
+    const [showimage] = useState("https://www.seekpng.com/png/detail/202-2024994_profile-icon-profile-logo-no-background.png")
     return (
         <>
             <div className="home_background_color">
@@ -25,9 +25,9 @@ function EditProfile(props) {
                                     accept="image/*"
                                     name="image-upload"
                                     id="input"
-                                    onChange={(e) => {
-                                        setshowimage(URL.createObjectURL(e.target.files[0]))
-                                    }}
+                                    // onChange={(e) => {
+                                    //     setshowimage(URL.createObjectURL(e.target.files[0]))
+                                    // }}
                                 />
                                 <div className="">
                                     <label className="resumeview_image_upload" htmlFor="input">
