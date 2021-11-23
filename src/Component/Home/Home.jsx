@@ -18,12 +18,12 @@ import s9 from "../images/s9.png";
 import s10 from "../images/s10.png";
 import s11 from "../images/s11.png";
 import s12 from "../images/s12.png";
+import slideimage from "../images/slideimage.png"
 
 
 import Monitize from "../UsedCompnents/Monitize"
 import Embed from '../UsedCompnents/Embed';
 import MultilpleLinks from '../UsedCompnents/MultilpleLinks';
-import ImageCrasoul from '../ImageCrasoul/ImageCrasoul';
 import MultipleLayout from '../UsedCompnents/MultipleLayout';
 import InDepth from '../UsedCompnents/InDepth';
 import GetYourLink from '../UsedCompnents/GetYourLink';
@@ -75,8 +75,8 @@ function Home() {
                 </div>
                 <div className="mt-5 user_color_back p-5">
                     <div className="text-center home_content">Over 1,00,000 users trust <span className="content_color">ULNK HUB</span> to <br />supercharge their bio links </div>
-                    <div className="text-center desktopSlider mt-3">
-                        <ImageCrasoul />
+                    <div className="text-center  mt-3">
+                        <img src={slideimage} alt="" className="crasoul_image" />
                     </div>
 
                 </div>
