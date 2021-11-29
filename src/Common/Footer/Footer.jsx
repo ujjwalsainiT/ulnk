@@ -15,7 +15,7 @@ function Footer(props) {
                 <Grid className="Component_main_grid p-3 ">
                     <Grid item md={9} className="p-3">
 
-                        <div className="mt-1 Footer_Content">ulnk: Powerful Link in Bio for Sales </div>
+                        <div className="mt-1 Footer_Content">UNLK: We Drive Connections </div>
                         <div className="mt-1 Footer_Content">Connect with Us:<i class="fa fa-facebook hover_cursor ml-3"></i>  <i class="fa fa-twitter hover_cursor ml-3"></i>  <i class="fa fa-instagram hover_cursor ml-3"></i> </div>
                     </Grid>
 

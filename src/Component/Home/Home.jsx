@@ -42,9 +42,9 @@ function Home() {
                     <Grid className="Component_main_grid p-3 ">
                         <Grid item md={6} className="p-3">
                             <div className="home_content">ULNK HUB:</div>
-                            <div className="home_content">Powerful <span className="content_color">Link in Bio</span> <br />for Socials</div>
-                            <div className="home_para">Connect all your channels with only one link!</div>
-                            <div className="home_para">Easier contribution receiving and audience analysis</div>
+                            <div className="home_content"> <span className="content_color">We Drive Connections</span> <br /></div>
+                            <div className="home_para">Personalize the journey to all of your information, sales channels, social mdia links and so much more. </div>
+
                             <div className="mt-2 mb-2 text-right">
                                 <button className="Home_page_button">Try for Free <i className="fa fa-arrow-right" /></button>
                             </div>
@@ -74,7 +74,7 @@ function Home() {
                     </Grid>
                 </div>
                 <div className="mt-5 user_color_back p-5">
-                    <div className="text-center home_content">Over 1,00,000 users trust <span className="content_color">ULNK HUB</span> to <br />supercharge their bio links </div>
+                    <div className="text-center home_content">A ULNK HUB gives you the superpower to deliver an interactive world<br />  where eveerything is accessible to your customers, followers  <br />and friends. </div>
                     <div className="text-center  mt-3">
                         <img src={slideimage} alt="" className="crasoul_image" />
                     </div>
@@ -132,7 +132,7 @@ function Home() {
                 </div>
 
                 <div className="mt-5 p-2">
-                    <div className="text-center home_content">Use ULNK HUB to hold all of your<span className="content_color"> links, Social <br /> accounts, contact information,</span> and more.</div>
+                    <div className="text-center home_content">A ULNK HUB allows companies to personalize a consumers journey.<br/> Drive people to your important information, sales channels<br/> and social media connections.</div>
                     <div className="mt-2 mb-2 text-center">
                         <button className="Home_page_button">Try for Free <i className="fa fa-arrow-right" /></button>
                     </div>

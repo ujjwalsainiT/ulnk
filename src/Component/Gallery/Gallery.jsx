@@ -6,7 +6,7 @@ import { Grid } from '@material-ui/core';
 //css file
 import "./Gallery.css";
 
-import c2 from "../images/c2.png";
+
 import c3 from "../images/c3.png";
 import c4 from "../images/c4.png";
 import c5 from "../images/c5.png";
@@ -23,8 +23,8 @@ function Gallery() {
             <div className="home_background_color">
 
                 <div className="content_padding">
-                    <div className="text-center home_content">Ulnk<span className="content_color"> Gallery</span></div>
-                    <div className="home_para text-center mt-4">Check out some of our favourite linker pages</div>
+                    <div className="text-center home_content">Ulnk Hub<span className="content_color"> Gallery</span></div>
+                    <div className="home_para text-center mt-4">Check out some of our favourite pages</div>
                     <div className="mt-3 text-center">
                         <button className="Home_page_button">Sign up free now !</button>
                     </div>
@@ -32,10 +32,10 @@ function Gallery() {
                     <div className="data_padding_from_both mt-5">
                         <Grid className="Component_main_grid p-3 ">
                             <Grid item md={3} className="p-3">
-                                <img src={c2} alt="" className="crasoul_image" />
+                                <img src={c3} alt="" className="crasoul_image" />
                             </Grid>
                             <Grid item md={3} className="p-3">
-                                <img src={c2} alt="" className="crasoul_image" />
+                                <img src={c3} alt="" className="crasoul_image" />
                             </Grid>
                             <Grid item md={3} className="p-3">
                                 <img src={c3} alt="" className="crasoul_image" />
@@ -50,28 +50,28 @@ function Gallery() {
                                 <img src={c5} alt="" className="crasoul_image" />
                             </Grid>
                             <Grid item md={3} className="p-3">
-                                <img src={c2} alt="" className="crasoul_image" />
+                                <img src={c3} alt="" className="crasoul_image" />
                             </Grid>
                             <Grid item md={3} className="p-3">
-                                <img src={c2} alt="" className="crasoul_image" />
+                                <img src={c3} alt="" className="crasoul_image" />
                             </Grid>
                             <Grid item md={3} className="p-3">
-                                <img src={c2} alt="" className="crasoul_image" />
+                                <img src={c3} alt="" className="crasoul_image" />
                             </Grid>
                         </Grid>
 
                         <Grid className="Component_main_grid p-3 ">
                             <Grid item md={3} className="p-3">
-                                <img src={c2} alt="" className="crasoul_image" />
+                                <img src={c3} alt="" className="crasoul_image" />
                             </Grid>
                             <Grid item md={3} className="p-3">
-                                <img src={c2} alt="" className="crasoul_image" />
+                                <img src={c3} alt="" className="crasoul_image" />
                             </Grid>
                             <Grid item md={3} className="p-3">
-                                <img src={c2} alt="" className="crasoul_image" />
+                                <img src={c3} alt="" className="crasoul_image" />
                             </Grid>
                             <Grid item md={3} className="p-3">
-                                <img src={c2} alt="" className="crasoul_image" />
+                                <img src={c3} alt="" className="crasoul_image" />
                             </Grid>
                         </Grid>
                     </div>
