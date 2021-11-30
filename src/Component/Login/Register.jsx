@@ -13,7 +13,7 @@ import { Button, Card, TextField, IconButton, OutlinedInput, InputAdornment, For
 import { Visibility, VisibilityOff } from "@material-ui/icons";
 
 
-const Login = (props) => {
+const Register = (props) => {
 
     //---------------------local state ----------------------
     const [showPassword, setshowPassword] = useState(false);
@@ -29,17 +29,32 @@ const Login = (props) => {
             <div className="home_background_color">
                 <div className="Login_Main_div content_padding pb-5">
                     <Card className="pt-2 pb-2 Card_shadow form_width mt-2">
-                        <p className="login_page_heading mt-3">Log In</p>
+                        <p className="login_page_heading mt-3">Sign Up</p>
                         <div className="main_padding_top_bottom">
                             <div>
+                                <TextField
+                                    placeholder="Name"
+                                    id="outlined-basic"
+                                    variant="outlined"
+                                    autoComplete="off"
+                                />
+                            </div>
+                            <div className="mt-2">
                                 <TextField
                                     placeholder="Email Address"
                                     id="outlined-basic"
                                     variant="outlined"
                                     autoComplete="off"
-
                                 />
+                            </div>
 
+                            <div className="mt-2">
+                                <TextField
+                                    placeholder="Mobile Number"
+                                    id="outlined-basic"
+                                    variant="outlined"
+                                    autoComplete="off"
+                                />
                             </div>
 
                             <div className="mt-2">
@@ -65,7 +80,7 @@ const Login = (props) => {
 
                             </div>
 
-                            <div className="d-flex justify-content-between mt-1 mb-2">
+                            {/* <div className="d-flex justify-content-between mt-1 mb-2">
                                 <span>
                                     <div className="form-check">
                                         <input className="form-check-input" type="checkbox" id="defaultCheck1" />
@@ -75,7 +90,7 @@ const Login = (props) => {
                                     </div>
                                 </span>
                                 <span className="login_content hover_cursor">forgot Password?</span>
-                            </div>
+                            </div> */}
 
                             <div className="inputfiledformatting mt-3">
                                 <Button
@@ -83,11 +98,11 @@ const Login = (props) => {
                                     className="Login_page_button"
                                     onClick={() => props.history.push("/edit-profile")}
                                 >
-                                    Log in
+                                    Sign up
                                 </Button>
                             </div>
                             <div className="mt-1 mb-1 login_content">By creating an account you agree to our <span className="link_terms">Terms and conditions</span></div>
-                            <div className="mt-1 mb-3 login_content">Don't have an account? <span className="link_terms" onClick={() => props.history.push("/register")}>Sign up</span></div>
+                            <div className="mt-1 mb-3 login_content">Already have an account? <span className="link_terms" onClick={() => props.history.push("/login")}>Login</span></div>
                         </div>
                     </Card>
 
@@ -97,4 +112,4 @@ const Login = (props) => {
     );
 };
 
-export default HOC(Login);
+export default HOC(Register);

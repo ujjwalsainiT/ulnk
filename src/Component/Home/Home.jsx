@@ -74,7 +74,7 @@ function Home() {
                     </Grid>
                 </div>
                 <div className="mt-5 user_color_back p-5">
-                    <div className="text-center home_content">A ULNK HUB gives you the superpower to deliver an interactive world<br />  where eveerything is accessible to your customers, followers  <br />and friends. </div>
+                    <div className="text-center home_content">A ULNK HUB gives you the superpower to deliver an interactive world<br />  where everything is accessible to your customers, followers  <br />and friends. </div>
                     <div className="text-center  mt-3">
                         <img src={slideimage} alt="" className="crasoul_image" />
                     </div>

@@ -17,6 +17,7 @@ import EditProfile from "./Component/EditProfile/EditProfile";
 import Statistics from "./Component/AfterLoginPage/Statistics/Statistics";
 import AddIcons from "./Component/EditProfile/AddIcons";
 import LinkStyles from "./Component/AfterLoginPage/LinkStyles/LinkStyles";
+import Register from "./Component/Login/Register";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/pricing" component={Pricing} />
         <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
         <Route exact path="/edit-profile" component={EditProfile} />
         <Route exact path="/add-icons" component={AddIcons} />
 

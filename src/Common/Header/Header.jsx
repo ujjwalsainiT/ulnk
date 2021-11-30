@@ -26,15 +26,13 @@ const Header = (props) => {
         document.getElementById("mySidenav").style.width = "0px";
         setSidebar(false)
     }
-    const redirecthome = () => {
-        window.location.href = "/home";
-    }
+ 
     return (
         <div className="topheader">
             <AppBar position="fixed" className="MainHeader">
                 <Toolbar className="header_padding">
                     <div>
-                        <img src={logo} alt="" style={{ height: "55px" }} onClick={redirecthome} />
+                        <img src={logo} alt="" style={{ height: "55px" }} onClick={() => props.history.push("/home")} />
                     </div>
                     <div className="header_grow" />
                     <div className="header_links">
@@ -47,7 +45,7 @@ const Header = (props) => {
                             <button className="header_button" onClick={() => props.history.push("/login")}>Login</button>
                         </span>
                         <span className="header_link_color">
-                            <button className="header_button" onClick={() => props.history.push("/login")}>Sign Up</button>
+                            <button className="header_button" onClick={() => props.history.push("/register")}>Sign Up</button>
                         </span>
                     </div>
                     <div className="mobile_Burger_Menu">
@@ -87,7 +85,7 @@ const Header = (props) => {
                             <span className="logout_Pointer_cursor" onClick={() => props.history.push("/login")}>
                                 Login
                             </span>
-                            <span className="logout_Pointer_cursor" onClick={() => props.history.push("/login")}>
+                            <span className="logout_Pointer_cursor" onClick={() => props.history.push("/register")}>
                                 SignUp
                             </span>
                         </div>

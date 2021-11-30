@@ -63,7 +63,7 @@ const HeaderAfterLogin = (props) => {
                                     <span class="dropdown-item">Billing</span>
                                     <span class="dropdown-item" onClick={() => {
                                         localStorage.clear();
-                                        window.location.href = "/home"
+                                        props.history.push("/home")
                                     }}>Logout</span>
                                 </div>
                             </div>
@@ -118,6 +118,15 @@ const HeaderAfterLogin = (props) => {
                             </span>
                             <span className="logout_Pointer_cursor" onClick={() => props.history.push("/free-trail")}>
                                 Free Trail
+                            </span>
+                            <span className="logout_Pointer_cursor" onClick={() => props.history.push("/my-account")}>
+                                My Account
+                            </span>
+                            <span className="logout_Pointer_cursor" onClick={() => {
+                                localStorage.clear();
+                                props.history.push("/home")
+                            }}>
+                                Logout
                             </span>
 
                         </div>
